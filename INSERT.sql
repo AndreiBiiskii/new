@@ -1,168 +1,175 @@
-INSERT INTO Genre  (genre_id , name) VALUES (1, 'POP');
-INSERT INTO Genre  (genre_id , name) VALUES (2, 'ROCK');
-INSERT INTO Genre  (genre_id , name) VALUES (3, 'Popsa');
-INSERT INTO Genre  (genre_id , name) VALUES (4, 'Rep');
+INSERT INTO Genre  (genre_id , name) VALUES
+(1, 'POP'),
+(2, 'ROCK'),
+(3, 'Popsa'),
+(4, 'Rep');
 
-INSERT INTO Singer (singer_id , name) VALUES (1, 'Ariana Grande');
-INSERT INTO Singer (singer_id , name) VALUES (2, 'Rihanna');
-INSERT INTO Singer (singer_id , name) VALUES (3, 'Lady Gaga');
-INSERT INTO Singer (singer_id , name) VALUES (4, 'Harry Styles');
-INSERT INTO Singer (singer_id , name) VALUES (5, 'One Direction');
-INSERT INTO Singer (singer_id , name) VALUES (6, 'Olivia Rodrigo');
-INSERT INTO Singer (singer_id , name) VALUES (7, 'Katy Perry');
-INSERT INTO Singer (singer_id , name) VALUES (8, 'Lorde');
-INSERT INTO Singer (singer_id , name) VALUES (9, 'Doja Cat');
+INSERT INTO Singer (singer_id , name) VALUES 
+(1, 'Ariana Grande'),
+(2, 'Rihanna'),
+(3, 'Lady Gaga'),
+(4, 'Harry Styles'),
+(5, 'One Direction'),
+(6, 'Olivia Rodrigo'),
+(7, 'Katy Perry'),
+(8, 'Lorde'),
+(9, 'Doja Cat'),
 
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (1, 1);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (1, 8);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (1, 2);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (1, 6);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (1, 7);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (1, 4);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (2, 2);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (2, 6);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (2, 1);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (2, 5);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (2, 9);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (3, 4);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (3, 5);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (3, 2);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (3, 3);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (4, 6);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (4, 7);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (4, 2);
-INSERT INTO SingerGenre (genre_id , singer_id) VALUES (4, 8);
+INSERT INTO SingerGenre (genre_id , singer_id) VALUES 
+(1, 1),
+(1, 8),
+(1, 2),
+(1, 6),
+(1, 7),
+(1, 4),
+(2, 2),
+(2, 6),
+(2, 1),
+(2, 5),
+(2, 9),
+(3, 4),
+(3, 5),
+(3, 2),
+(3, 3),
+(4, 6),
+(4, 7),
+(4, 2),
+(4, 8);
 
-INSERT INTO Album (album_id , name , date_create) VALUES (1, 'Dangerous Woman', '2016-04-01');
-INSERT INTO Album (album_id , name , date_create) VALUES (2, 'Born This Way', '2011-01-01');
-INSERT INTO Album (album_id , name , date_create) VALUES (3, 'Doo-Wops & Hooligans', '2010-10-04');
-INSERT INTO Album (album_id , name , date_create) VALUES (4, 'Dynamite', '2020-08-21');
-INSERT INTO Album (album_id , name , date_create) VALUES (5, 'Revival (Deluxe)', '2015-10-09');
-INSERT INTO Album (album_id , name , date_create) VALUES (6, 'Talk That Talk', '2011-01-01');
-INSERT INTO Album (album_id , name , date_create) VALUES (7, 'Endless Summer Vacation', '2023-03-10');
-INSERT INTO Album (album_id , name , date_create) VALUES (8, 'Thriller', '1982-11-30');
-INSERT INTO Album (album_id , name , date_create) VALUES (9, 'DIMENSION : DILEMMA', '2021-10-12');
-INSERT INTO Album (album_id , name , date_create) VALUES (10, 'PRISM', '2013-10-23');
-INSERT INTO Album (album_id , name , date_create) VALUES (11, 'Coco', '2007-01-01');
-INSERT INTO Album (album_id , name , date_create) VALUES (12, 'Singular Act I', '2018-11-08');
+INSERT INTO Album (album_id , name , date_create) VALUES 
+(1, 'Dangerous Woman', '2016-04-01'),
+(2, 'Born This Way', '2011-01-01'),
+(3, 'Doo-Wops & Hooligans', '2010-10-04'),
+(4, 'Dynamite', '2020-08-21'),
+(5, 'Revival (Deluxe)', '2015-10-09'),
+(6, 'Talk That Talk', '2011-01-01'),
+(7, 'Endless Summer Vacation', '2023-03-10'),
+(8, 'Thriller', '1982-11-30'),
+(9, 'DIMENSION : DILEMMA', '2021-10-12'),
+(10, 'PRISM', '2013-10-23'),
+(11, 'Coco', '2007-01-01'),
+(12, 'Singular Act I', '2018-11-08');
 
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (1, 5);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (1, 7);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (1, 9);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (2, 1);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (2, 2);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (3, 5);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (3, 4);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (3, 6);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (3, 3);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (4, 1);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (4, 5);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (4, 2);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (4, 9);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (5, 1);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (5, 8);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (6, 1);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (6, 3);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (6, 5);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (6, 7);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (7, 1);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (7, 2);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (7, 4);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (8, 6);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (8, 5);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (8, 9);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (8, 8);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (9, 1);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (9, 3);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (10,7);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (10, 6);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (10, 7);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (10, 4);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (10, 2);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (11, 1);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (11, 5);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (11, 6);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (11, 7);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (11, 9);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (11, 2);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (12, 1);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (12, 2);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (12, 3);
-INSERT INTO SingerAlbum (album_id , singer_id ) VALUES (12, 4);
+INSERT INTO SingerAlbum (album_id , singer_id ) VALUES
+(1, 5),
+(1, 7),
+(1, 9),
+(2, 1),
+(2, 2),
+(3, 5),
+(3, 4),
+(3, 6),
+(3, 3),
+(4, 1),
+(4, 5),
+(4, 2),
+(4, 9),
+(5, 1),
+(5, 8),
+(6, 1),
+(6, 3),
+(6, 5),
+(6, 7),
+(7, 1),
+(7, 2),
+(7, 4),
+(8, 6),
+(8, 5),
+(8, 9),
+(8, 8),
+(9, 1),
+(9, 3),
+(10,7),
+(10, 6),
+(10, 4),
+(10, 2),
+(11, 1),
+(11, 5),
+(11, 6),
+(11, 7),
+(11, 9),
+(11, 2),
+(12, 1),
+(12, 2),
+(12, 3),
+(12, 4);
 
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (1, 12, 'Music of the Sun', 180);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (2, 8,  'A Girl like Me', 200);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (3, 12, 'Good Girl Gone Bad', 150);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (4, 5,  'Rated R', 220);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (5, 4,  'Loud', 200);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (6, 1,  'Talk That Talk', 180);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (7, 1,  'Unapologetic', 190);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (8, 3,  'Stupid in Love', 170);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (9, 5,  'Rockstar 101', 180);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (10, 2, 'Russian Roulette', 210);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (11, 2, 'Fire Bomb', 150);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (12, 6, 'Rude Boy', 180);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (13, 7, 'Photographs', 222);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (14, 9, 'G4L', 210);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (15, 10, 'Te Amo', 170);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (16, 11, 'Cold Case Love', 150);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (17, 11, 'The Last Song', 160);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (18, 11, 'Love Me', 150);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (19, 3,  'Mr. Arrow Key', 180);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (20, 5,  'Traffic Lights', 200);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (21, 4,  'Lost in You', 100);
-INSERT INTO Track (track_id , album_id, title, duration) VALUES (22, 6,  'Don’t Lie to Me', 250);
+INSERT INTO Track (track_id , album_id, title, duration) VALUES 
+(1, 12, 'Music of the Sun', 180),
+(2, 8,  'A Girl like Me', 200),
+(3, 12, 'Good Girl Gone Bad', 150),
+(4, 5,  'Rated R', 220),
+(5, 4,  'Loud', 200),
+(6, 1,  'Talk That Talk', 180),
+(7, 1,  'Unapologetic', 190),
+(8, 3,  'Stupid in Love', 170),
+(9, 5,  'Rockstar 101', 180),
+(10, 2, 'Russian Roulette', 210),
+(11, 2, 'Fire Bomb', 150),
+(12, 6, 'Rude Boy', 180),
+(13, 7, 'Photographs', 222),
+(14, 9, 'G4L', 210),
+(15, 10, 'Te Amo', 170),
+(16, 11, 'Cold Case Love', 150),
+(17, 11, 'The Last Song', 160),
+(18, 11, 'Love Me', 150),
+(19, 3,  'Mr. Arrow Key', 180),
+(20, 5,  'Traffic Lights', 200),
+(21, 4,  'Lost in You', 100),
+(22, 6,  'Don’t Lie to Me', 250);
 
-INSERT INTO Compilation (compilation_id , name, date_create) VALUES (1, 'compilation_1', '1999-10-02');
-INSERT INTO Compilation (compilation_id , name, date_create) VALUES (2, 'compilation_2', '2000-12-12');
-INSERT INTO Compilation (compilation_id , name, date_create) VALUES (3, 'compilation_3', '2000-05-15');
-INSERT INTO Compilation (compilation_id , name, date_create) VALUES (4, 'compilation_4', '2020-08-20');
-INSERT INTO Compilation (compilation_id , name, date_create) VALUES (5, 'compilation_5', '2022-12-01');
-INSERT INTO Compilation (compilation_id , name, date_create) VALUES (6, 'compilation_6', '2023-11-14');
-INSERT INTO Compilation (compilation_id , name, date_create) VALUES (7, 'compilation_7', '2012-04-06');
-INSERT INTO Compilation (compilation_id , name, date_create) VALUES (8, 'compilation_8', '2005-10-20');
-INSERT INTO Compilation (compilation_id , name, date_create) VALUES (9, 'compilation_9', '2005-12-01');
-INSERT INTO Compilation (compilation_id , name, date_create) VALUES (10, 'compilation_10', '2015-09-20');
+INSERT INTO Compilation (compilation_id , name, date_create) VALUES 
+(1, 'compilation_1', '1999-10-02'),
+(2, 'compilation_2', '2000-12-12'),
+(3, 'compilation_3', '2000-05-15'),
+(4, 'compilation_4', '2020-08-20'),
+(5, 'compilation_5', '2022-12-01'),
+(6, 'compilation_6', '2023-11-14'),
+(7, 'compilation_7', '2012-04-06'),
+(8, 'compilation_8', '2005-10-20'),
+(9, 'compilation_9', '2005-12-01'),
+(10, 'compilation_10', '2015-09-20');
 
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (1, 1);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (2, 1);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (3, 2);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (4, 2);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (5, 8);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (6, 2);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (7, 3);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (8, 3);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (10, 3);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (11, 4);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (12, 5);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (13, 5);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (14, 4);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (15, 4);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (16, 7);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (17, 6);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (18, 6);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (19, 6);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (20, 1);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (21, 2);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (22, 3);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (1, 2);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (2, 2);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (3, 1);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (4, 5);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (5, 6);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (6, 5);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (7, 4);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (8, 4);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (9, 1);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (10, 4);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (11, 3);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (12, 4);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (13, 8);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (14, 6);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (15, 6);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (16, 5);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (17,10);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (18, 10);
-INSERT INTO TrackCompilation (track_id , compilation_id) VALUES (19, 9);
+INSERT INTO TrackCompilation (track_id , compilation_id) VALUES
+(1, 1),
+(2, 1),
+(3, 2),
+(4, 2),
+(5, 8),
+(6, 2),
+(7, 3),
+(8, 3),
+(10, 3),
+(11, 4),
+(12, 5),
+(13, 5),
+(14, 4),
+(15, 4),
+(16, 7),
+(17, 6),
+(18, 6),
+(19, 6),
+(20, 1),
+(21, 2),
+(22, 3),
+(1, 2)
+(2, 2),
+(3, 1),
+(4, 5),
+(5, 6),
+(6, 5),
+(7, 4),
+(8, 4),
+(9, 1),
+(10, 4),
+(11, 3),
+(12, 4),
+(13, 8),
+(14, 6),
+(15, 6),
+(16, 5)
+(17,10),
+(18, 10),
+(19, 9);
 
 
