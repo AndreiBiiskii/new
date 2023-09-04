@@ -13,7 +13,7 @@ INSERT INTO Singer (singer_id , name) VALUES
 (6, 'Olivia Rodrigo'),
 (7, 'Katy Perry'),
 (8, 'Lorde'),
-(9, 'Doja Cat'),
+(9, 'Doja Cat');
 
 INSERT INTO SingerGenre (genre_id , singer_id) VALUES 
 (1, 1),
@@ -152,7 +152,7 @@ INSERT INTO TrackCompilation (track_id , compilation_id) VALUES
 (20, 1),
 (21, 2),
 (22, 3),
-(1, 2)
+(1, 2),
 (2, 2),
 (3, 1),
 (4, 5),
@@ -167,7 +167,7 @@ INSERT INTO TrackCompilation (track_id , compilation_id) VALUES
 (13, 8),
 (14, 6),
 (15, 6),
-(16, 5)
+(16, 5),
 (17,10),
 (18, 10),
 (19, 9);
