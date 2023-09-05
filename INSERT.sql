@@ -116,7 +116,8 @@ INSERT INTO Track (track_id , album_id, title, duration) VALUES
 (19, 3,  'Mr. Arrow Key', 180),
 (20, 5,  'Traffic Lights', 200),
 (21, 4,  'Lost in You', 100),
-(22, 6,  'Don’t Lie to Me', 250);
+(22, 6,  'Don’t Lie to Me', 250),
+(23, 6,  'new track', 180);
 
 INSERT INTO Compilation (compilation_id , name, date_create) VALUES 
 (1, 'compilation_1', '1999-10-02'),
@@ -171,5 +172,4 @@ INSERT INTO TrackCompilation (track_id , compilation_id) VALUES
 (17,10),
 (18, 10),
 (19, 9);
-
 
